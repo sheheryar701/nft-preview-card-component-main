@@ -1,0 +1,123 @@
+.attribution {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(0, 0%, 100%, 75%);
+  }
+
+  .container {
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+
+  .container h2{
+    color: white;
+    margin: 20px 0 20px;
+  }
+  .container .img{
+    position: relative;
+  }
+  
+  .container .img .overlay{
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 60%);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .container .img .overlay:hover{
+    opacity: 1;
+  }
+
+  .container .img .overlay svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .heading{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .img img {
+    width: 100%;
+    border-radius: 20px;
+    height: auto;
+  }
+
+  .days{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  .days h3{
+    margin-right: 90px;
+    margin-left: 4px;
+    color: cyan;
+  }
+  .days p{
+    margin-left: 4px;
+  }
+  .avatar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  .avatar img{
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  .avatar .name{
+    color: white;
+    font-weight: bolder;
+  }
+
+  .container h2:hover{
+    cursor: pointer;
+    color: cyan;
+  }
+
+  .avatar .name:hover{
+    cursor: pointer;
+    color: cyan;
+  }
+
+  .img img:hover{
+    cursor: pointer;
+  }
+  @media (min-width: 300px) {
+    .container{
+        width: 400px;
+        margin: 0 auto 1rem;
+    }
+  }
